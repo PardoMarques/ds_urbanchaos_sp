@@ -29,17 +29,31 @@ ds_urbanchaos_sp/
 
 - Python 3.10+
 - Pandas, GeoPandas, Matplotlib, Seaborn
-- PyTorch para ML puro
+- PyTorch
 
-## Setup rápido
+## Setup rápido + Jupyter
 
 ```bash
 # Clone o repositório
 git clone https://github.com/seu_usuario/ds_urbanchaos_sp.git
 cd ds_urbanchaos_sp
 
-# Crie o ambiente e instale as dependências
+# 1. Crie e ative o ambiente virtual
+python -m venv .venv
+source .venv/bin/activate        # Linux/macOS
+.venv\Scripts\activate           # Windows
+
+# 2. Crie o ambiente e instale as dependências
 pip install -r requirements.txt
+
+# 3. Instale o kernel jupy
+pip install jupyterlab ipykernel
+
+# 4. Registre o venv como kernel do Jupyter
+python -m ipykernel install --user --name=ds_urbanchaos_sp --display-name="Python (ds_urbanchaos_sp)"
+
+# 5. Rode o JupyterLab
+jupyter lab
 ```
 
 ## Autor
