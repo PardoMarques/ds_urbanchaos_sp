@@ -1,0 +1,30 @@
+# Ambiente virtual
+.venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Dados
+data/raw/
+data/processed/
+data/external/
+
+# Logs e resultados
+*.log
+experiments/logs/
+experiments/models/
+experiments/reports/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*.pyc
+__pycache__/
+
+# VS Code (opcional)
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
